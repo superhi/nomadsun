@@ -14,8 +14,7 @@ body {
 
 /* using the same idea as tachyons using classes that apply
 specific styles to our elements */
-.archivo,
-.entry-content h3 {
+.archivo {
   font-family: 'Archivo Black', sans-serif;
 }
 
@@ -26,25 +25,4 @@ specific styles to our elements */
 .hero-heading,
 .hero-subhead {
   font-size: 64px;
-}
-
-
-.hero-content {
-  max-width: 760px;
-}
-
-.text-block h3 {
-  font-size: 21px;
-  margin-top: 0;
-  margin-bottom: 20px;
-  text-transform: uppercase;
-  letter-spacing: 0.05em
-}
-
-.entry-content h3 {
-  font-size: 21px;
-  margin-top: 0;
-  margin-bottom: 20px;
-  text-transform: uppercase;
-  letter-spacing: 0.05em;
 }
