@@ -1,0 +1,50 @@
+body {
+  /* here we use our main typeface and set it on our body tag */
+  font-family: 'Cardo', georgia, serif;
+  font-size: 18px;
+  line-height: 1.2;
+  /* here we smooth the body text a touch to make it clearer */
+  -webkit-font-smoothing: antialiased;
+}
+
+/* wherever we use the cardo class, we get cardo */
+.cardo {
+  font-family: 'Cardo', georgia, serif;
+}
+
+/* using the same idea as tachyons using classes that apply
+specific styles to our elements */
+.archivo,
+.entry-content h3 {
+  font-family: 'Archivo Black', sans-serif;
+}
+
+.tenor {
+  font-family: 'Tenor Sans', sans-serif;
+}
+
+.hero-heading,
+.hero-subhead {
+  font-size: 64px;
+}
+
+
+.hero-content {
+  max-width: 760px;
+}
+
+.text-block h3 {
+  font-size: 21px;
+  margin-top: 0;
+  margin-bottom: 20px;
+  text-transform: uppercase;
+  letter-spacing: 0.05em
+}
+
+.entry-content h3 {
+  font-size: 21px;
+  margin-top: 0;
+  margin-bottom: 20px;
+  text-transform: uppercase;
+  letter-spacing: 0.05em;
+}
