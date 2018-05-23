@@ -8,12 +8,14 @@ body {
 }
 
 /* wherever we use the cardo class, we get cardo */
+
 .cardo {
   font-family: 'Cardo', georgia, serif;
 }
 
 /* using the same idea as tachyons using classes that apply
 specific styles to our elements */
+
 .archivo,
 .text-block h3 {
   font-family: 'Archivo Black', sans-serif;
@@ -42,8 +44,4 @@ specific styles to our elements */
   margin-bottom: 20px;
   text-transform: uppercase;
   letter-spacing: 0.05em;
-}
-
-.container {
-  max-width: 1300px;
 }
