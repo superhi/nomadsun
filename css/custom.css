@@ -2,7 +2,7 @@ body {
   /* here we use our main typeface and set it on our body tag */
   font-family: 'Cardo', georgia, serif;
   font-size: 18px;
-  line-height: 1.2;
+  line-height: 1.5;
   /* here we smooth the body text a touch to make it clearer */
   -webkit-font-smoothing: antialiased;
 }
@@ -14,7 +14,8 @@ body {
 
 /* using the same idea as tachyons using classes that apply
 specific styles to our elements */
-.archivo {
+.archivo,
+.text-block h3 {
   font-family: 'Archivo Black', sans-serif;
 }
 
@@ -25,4 +26,24 @@ specific styles to our elements */
 .hero-heading,
 .hero-subhead {
   font-size: 64px;
+}
+
+.hero-heading {
+  letter-spacing: 0.05em;
+}
+
+.hero-content {
+  max-width: 750px;
+}
+
+.text-block h3 {
+  font-size: 20px;
+  margin-top: 0;
+  margin-bottom: 20px;
+  text-transform: uppercase;
+  letter-spacing: 0.05em;
+}
+
+.container {
+  max-width: 1300px;
 }
