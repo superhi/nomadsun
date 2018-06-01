@@ -122,15 +122,18 @@ add_action( 'widgets_init', 'nomadsun_widgets_init' );
 function nomadsun_scripts() {
 	wp_enqueue_style( 'nomadsun-style', get_stylesheet_uri() );
 
+	// here we bring tachyons into our theme and load it
+	wp_enqueue_style( 'nomadsun-tachyons',  get_template_directory_uri() . '/css/tachyons.css');
+
+	// we load our custom css file
 	wp_enqueue_style( 'nomadsun-custom',  get_template_directory_uri() . '/css/custom.css');
 
-	wp_enqueue_script( 'nomadsun-navigation', get_template_directory_uri() . '/js/navigation.js', array(), '20151215', true );
+	// here we load barba.js from our js folder
+	wp_enqueue_script('nomadsun-barba', get_template_directory_uri() . '/js/barba.js');
 
-	wp_enqueue_script( 'nomadsun-skip-link-focus-fix', get_template_directory_uri() . '/js/skip-link-focus-fix.js', array(), '20151215', true );
+	// here we load our script file using jquery alongside it
+	wp_enqueue_script('nomadsun-main', get_template_directory_uri() . '/js/main.js', array('jquery'), '1.0.0', true );
 
-	if ( is_singular() && comments_open() && get_option( 'thread_comments' ) ) {
-		wp_enqueue_script( 'comment-reply' );
-	}
 }
 add_action( 'wp_enqueue_scripts', 'nomadsun_scripts' );
 
@@ -161,3 +164,24 @@ if ( defined( 'JETPACK__VERSION' ) ) {
 	require get_template_directory() . '/inc/jetpack.php';
 }
 
+// with our function we give it a name
+// and an input (argument) of $name
+function shout_name($name) {
+	// we want to take our name and convert
+	// it to uppercase and return it
+	echo strtoupper($name);
+}
+
+// write a function that formats
+// our date in a nice way
+function nice_date($date) {
+	echo date("F Y", strtotime($date));
+}
+
+// here we have a function that returns
+// us a nicely formatted background image
+function nice_background($image_field) {
+	// we pass in our image field, and it returns us it 
+	// in a formatted fashion 
+	echo 'background-image: url(' . get_field($image_field) . ')';
+}
