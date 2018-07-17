@@ -27,9 +27,9 @@
 	<div id="page" class="barba-container relative">
 		<a class="skip-link screen-reader-text" href="#content"><?php esc_html_e( 'Skip to content', 'nomadsun' ); ?></a>
 
-		<header id="masthead" class="site-header absolute top-0 left-0 w-100 pa3 ph4-l">
+		<header id="masthead" class="site-header absolute top-0 left-0 w-100 pa3 ph4-l z-2">
       <nav id="site-navigation" class="main-navigation flex justify-between items-center">
-        <a class="menu-toggle f6 archivo white ttu tracked block w4">
+        <a class="menu-toggle f6 archivo white ttu tracked block w4 bg-left db">
           Places
         </a>
 
@@ -50,5 +50,7 @@
         </div>
       </nav><!-- #site-navigation -->
     </header><!-- #masthead -->
+
+    <?php get_template_part('template-parts/content-menu'); ?>
 
 		<div id="content" class="site-content">
